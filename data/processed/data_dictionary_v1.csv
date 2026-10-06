@@ -1,0 +1,19 @@
+variable,unit,model_status,description
+datetime,UTC timestamp,index,Clé horaire unique
+price_da,EUR/MWh,target,Prix day-ahead France
+temperature_2m,°C,diagnostic_only,Température réalisée à Paris
+wind_speed_10m,m/s,diagnostic_only,Vent réalisé à Paris
+shortwave_radiation,W/m²,diagnostic_only,Irradiance réalisée à Paris
+demand_actual,MW,diagnostic_only,Consommation réalisée
+demand_forecast_j1,MW,candidate,Prévision de demande J-1
+oil_generation,MW,diagnostic_only,Production fioul réalisée
+coal_generation,MW,diagnostic_only,Production charbon réalisée
+gas_generation,MW,diagnostic_only,Production gaz réalisée
+nuclear_generation,MW,diagnostic_only,Production nucléaire réalisée
+wind_generation,MW,diagnostic_only,Production éolienne réalisée
+solar_generation,MW,diagnostic_only,Production solaire réalisée
+hydro_generation,MW,diagnostic_only,Production hydraulique réalisée
+pumping_consumption,MW,diagnostic_only,Pompage STEP réalisé
+bioenergy_generation,MW,diagnostic_only,Production bioénergies réalisée
+net_import_mw,MW,diagnostic_only,"Positif import, négatif export"
+fundamentals_imputed,0/1,quality_flag,Trois heures RTE interpolées

@@ -1,0 +1,38 @@
+{
+  "model_name": "Random Forest",
+  "feature_columns": [
+    "price_da_lag_1d",
+    "price_da_lag_2d",
+    "price_da_lag_7d",
+    "price_da_rollmean_1d",
+    "price_da_rollstd_1d",
+    "price_da_rollmean_7d",
+    "price_da_rollstd_7d",
+    "hour",
+    "weekday",
+    "is_weekend",
+    "month",
+    "hour_sin",
+    "hour_cos",
+    "weekday_sin",
+    "weekday_cos",
+    "month_sin",
+    "month_cos",
+    "is_holiday"
+  ],
+  "target_column": "price_da",
+  "selection_metric": "validation_RMSE",
+  "test_metrics": {
+    "MAE": 22.987194234014105,
+    "RMSE": 30.683941892067505,
+    "sMAPE": 59.950424043445786,
+    "Bias": -9.358701462592688,
+    "n_obs": 6548.0
+  },
+  "created_at_utc": "2026-09-20T19:08:01.701706+00:00",
+  "anti_leakage": {
+    "safe_features_only": true,
+    "test_used_for_tuning": false,
+    "realized_fundamentals_used": false
+  }
+}
